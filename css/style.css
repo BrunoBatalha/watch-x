@@ -295,10 +295,12 @@ h3::after {
     font-size: 14px;
     color: var(--cinza);
 }
-.footer .lista-footer .redes .redes-icones{
+
+.footer .lista-footer .redes .redes-icones {
     display: flex;
 }
-.footer .lista-footer .redes .redes-icones a{
+
+.footer .lista-footer .redes .redes-icones a {
     margin-right: 10px;
     margin-top: 15px;
     border: 2px solid var(--vermelho);
@@ -307,7 +309,8 @@ h3::after {
     display: flex;
     justify-content: center;
 }
-.footer .lista-footer .redes .redes-icones a:hover{
+
+.footer .lista-footer .redes .redes-icones a:hover {
     border-color: var(--branco);
 }
 
@@ -325,4 +328,61 @@ h3::after {
 .copy div p {
     margin-top: 15px;
     font-size: 14px;
+}
+
+/* Animações */
+
+.fadeInDown {
+    animation: fadeInDown  1.5s;
+}
+.fadeInUp {
+    animation: fadeInUp  1.5s;
+}
+.fadeInRight {
+    animation: fadeInRight  1.5s;
+}
+.fadeInLeft {
+    animation: fadeInLeft  1.5s;
+}
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(-20px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(20px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
