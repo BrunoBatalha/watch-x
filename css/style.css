@@ -150,6 +150,7 @@ h2::after {
 .lista-produtos li p {
     color: var(--cinza);
     font-size: 14px;
+    line-height: 1.5em;
 }
 
 .lista-produtos li p:nth-child(even) {
@@ -230,6 +231,10 @@ h5 {
     position: relative;
 }
 
+.lista-membros li .equipe-imagem img {
+    width: 100%;
+}
+
 .lista-membros li .equipe-imagem p {
     position: absolute;
     bottom: 0;
@@ -301,13 +306,17 @@ h3::after {
 }
 
 .footer .lista-footer .redes .redes-icones a {
-    margin-right: 10px;
     margin-top: 15px;
     border: 2px solid var(--vermelho);
     height: 50px;
     width: 50px;
     display: flex;
     justify-content: center;
+}
+
+.footer .lista-footer .redes .redes-icones a:nth-child(2) {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .footer .lista-footer .redes .redes-icones a:hover {
@@ -333,18 +342,20 @@ h3::after {
 /* Animações */
 
 .fadeInDown {
-    animation: fadeInDown  1.5s;
-}
-.fadeInUp {
-    animation: fadeInUp  1.5s;
-}
-.fadeInRight {
-    animation: fadeInRight  1.5s;
-}
-.fadeInLeft {
-    animation: fadeInLeft  1.5s;
+    animation: fadeInDown 1.5s;
 }
 
+.fadeInUp {
+    animation: fadeInUp 1.5s;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1.5s;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft 1.5s;
+}
 
 @keyframes fadeInDown {
     from {
@@ -356,6 +367,7 @@ h3::after {
         transform: none;
     }
 }
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -366,6 +378,7 @@ h3::after {
         transform: none;
     }
 }
+
 @keyframes fadeInRight {
     from {
         opacity: 0;
@@ -376,6 +389,7 @@ h3::after {
         transform: none;
     }
 }
+
 @keyframes fadeInLeft {
     from {
         opacity: 0;
@@ -384,5 +398,113 @@ h3::after {
     to {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* Responsivo */
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 740px;
+    }
+    /* Introdução */
+    .introducao button {
+        display: block;
+        margin: 0 auto;
+    }
+    .apresentacao h1 {
+        text-align: center;
+    }
+    .apresentacao h1::after {
+        margin: 0 auto;
+    }
+    .apresentacao p {
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* Qualidades */
+    .lista-qualidades {
+        display: flex;
+    }
+    .lista-qualidades li {
+        width: 360px;
+    }
+    .lista-qualidades li:nth-child(odd) {
+        margin: 10px 5px 0 0 !important;
+    }
+    .lista-qualidades li:nth-child(even) {
+        margin: 10px 0 0 5px !important;
+    }
+    /* Footer */
+    .footer .lista-footer li:first-child {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .container {
+        width: 90%;
+    }
+    .lista-produtos li {
+        display: flex;
+        flex-direction: column;
+    }
+    .lista-produtos li img {
+        width: 100%;
+    }
+    .lista-produtos li p {
+        font-size: 16px;
+        text-align: center !important;
+        margin: 10px auto 20px auto !important;
+        width: 500px;
+        max-width: 100%;
+    }
+    .lista-produtos li:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    /* Qualidades */
+    .lista-qualidades {
+        display: flex;
+    }
+    .lista-qualidades li:nth-child(odd) {
+        margin: 10px 0 0 0 !important;
+    }
+    .lista-qualidades li:nth-child(even) {
+        margin: 10px 0 0 0 !important;
+    }
+    .lista-qualidades li {
+        width: 100%;
+    }
+    /* Equipe */
+    .lista-membros{
+        display: block;
+    }
+    .lista-membros li{
+        width: 100%;
+        margin-left: 0 !important;
+        margin-top: 50px;
+    }
+    /* Contato */
+    .contato {
+        display: block;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contato * {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    h3::after {
+        margin: 0 auto;
+    }
+    /* Footer */
+    .footer .lista-footer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer .lista-footer li{
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
