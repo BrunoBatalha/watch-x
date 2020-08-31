@@ -79,6 +79,7 @@ h2::after {
 
 .introducao {
     background-image: url('../img/bg-relogio.png');
+    background-size: cover;
     background-repeat: no-repeat;
     height: 490px;
 }
