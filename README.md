@@ -1,7 +1,7 @@
 # Watch-X
 
 Site desenvolvido utilizando:
->**Front-end:** HTML, CSS e JavaScript
+>**Front-end:** HTML e CSS
 
 ## Design
 ![alt text](https://github.com/BrunoBatalha/watch-x/blob/master/apresentacao.png)
