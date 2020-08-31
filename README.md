@@ -1,7 +1,7 @@
 # Watch-X
 
 Site desenvolvido utilizando:
->**Front-end:** HTML, CSS e JavaScript\
+>**Front-end:** HTML, CSS e JavaScript
 
 ## Imagens
 
