@@ -3,7 +3,7 @@
 Site desenvolvido utilizando:
 >**Front-end:** HTML, CSS e JavaScript
 
-## Imagens
+## Design
 ![alt text](https://github.com/BrunoBatalha/watch-x/blob/master/apresentacao.png)
 
 ## Meu objetivo
