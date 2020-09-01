@@ -1,15 +1,7 @@
-// window.Anime = class {
-//   constructor() {
-//     (this.items = document.querySelectorAll("[data-anime]")), this.init();
-//   }
-//   init() {
-//     this.items.forEach(item => {
-//         setTimeout(()=>{
-//             item.classList.add("anime");
-//         },Number(item.getAttribute('data-anime')))
-//     });
-//   }
-// };
-// if (window.Anime) {
-//   new Anime();
-// }
+function moveScrollTo(idElement) {
+  window.scroll({
+    top: document.querySelector(idElement).offsetTop -80,  
+    left: 0,
+    behavior: "smooth" // 3
+  });
+}
